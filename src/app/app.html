@@ -1,0 +1,529 @@
+<main>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ABHWETA Technologies home">
+      <img
+        class="brand-logo"
+        src="/images/logo-icon.png"
+        alt="ABHWETA logo"
+      />
+      <span class="brand-name">
+        <strong>ABHWETA</strong>
+        <small>TECHNOLOGIES</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      (click)="menuOpen = !menuOpen"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" [class.open]="menuOpen">
+      <a href="#services" (click)="closeMenu()">Services</a>
+      <a href="#approach" (click)="closeMenu()">Our Approach</a>
+      <a href="#work" (click)="closeMenu()">Our Work</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#contact" class="contact-link" (click)="closeMenu()">
+        Let's Talk <span>&rarr;</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        YOUR BUSINESS. YOUR VISION. OUR SOLUTION.
+      </div>
+
+      <h1>
+        Technology built<br />
+        around <span>your</span><br />
+        business.
+      </h1>
+
+      <p class="hero-highlight">
+        Your idea. Your requirements. Your solution.
+      </p>
+
+      <p class="hero-description">
+        Every business is different. We understand your ideas,
+        requirements and challenges to build customized websites
+        and applications that work the way you want and fit
+        your budget.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="primary-button">
+          Explore our services <span>&rarr;</span>
+        </a>
+
+        <a href="#contact" class="secondary-button">
+          Tell us your idea
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <span>01</span>
+        <p>Designed around your business, not a template.</p>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-glow"></div>
+      <div class="visual-orbit orbit-one"></div>
+      <div class="visual-orbit orbit-two"></div>
+
+      <div class="visual-core">
+        <img
+          src="/images/logo-icon.png"
+          alt="ABHWETA symbol"
+        />
+      </div>
+
+      <div class="floating-card card-top">
+        <span class="card-icon">&check;</span>
+        <span>Built around your needs</span>
+      </div>
+
+      <div class="floating-card card-bottom">
+        <span class="card-icon">&check;</span>
+        <span>Designed for your budget</span>
+      </div>
+
+      <div class="visual-caption">
+        <span>ABHWETA TECHNOLOGIES</span>
+        <span>TURNING IDEAS INTO INNOVATION</span>
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <span>THOUGHTFUL ENGINEERING. PRACTICAL SOLUTIONS.</span>
+      <a href="#services">DISCOVER WHAT WE DO &darr;</a>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="value-section" id="approach">
+    <div class="value-intro">
+      <div class="section-label">
+        <span class="status-dot"></span>
+        THE ABHWETA APPROACH
+      </div>
+
+      <h2>
+        Your business is unique.
+        <span>Your software should be too.</span>
+      </h2>
+
+      <p>
+        You shouldn't have to change the way you work just to
+        use a software product. We listen, understand and create
+        technology around the way your business operates.
+      </p>
+    </div>
+
+    <div class="value-grid">
+      <article class="value-card">
+        <span class="value-number">01 / CUSTOMIZED</span>
+        <div class="value-icon">&compfn;</div>
+        <h3>Made for your requirements</h3>
+        <p>
+          From your first idea to the smallest detail, we build
+          according to what you actually need.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-number">02 / BUDGET-CONSCIOUS</span>
+        <div class="value-icon">&curren;</div>
+        <h3>Smart solutions. Practical budgets.</h3>
+        <p>
+          No unnecessary complexity. We focus on essential
+          features and transparent, practical estimates.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-number">03 / LONG-TERM</span>
+        <div class="value-icon">&infin;</div>
+        <h3>Support beyond delivery</h3>
+        <p>
+          Our relationship doesn't end at launch. We help
+          maintain, improve and support your solution.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="section-label">
+      <span class="status-dot"></span>
+      OUR SERVICES
+    </div>
+
+    <div class="section-title-row">
+      <h2>
+        What can we<br />
+        <span>build for you?</span>
+      </h2>
+
+      <p>
+        Whether you are starting from an idea or improving
+        an existing business, we create digital solutions
+        that fit your requirements.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-top">
+          <span>01</span>
+          <span class="service-icon">&lt;/&gt;</span>
+        </div>
+
+        <h3>Website Development</h3>
+
+        <p>
+          From professional business websites to customized
+          web applications, we build digital experiences
+          around your goals.
+        </p>
+
+        <ul>
+          <li>Business and corporate websites</li>
+          <li>Custom web applications</li>
+          <li>E-commerce and business portals</li>
+          <li>Dashboards and management systems</li>
+        </ul>
+
+        <a href="#contact">Discuss your website <span>&rarr;</span></a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-top">
+          <span>02</span>
+          <span class="service-icon">APP</span>
+        </div>
+
+        <h3>Mobile App Development</h3>
+
+        <p>
+          Turn your business idea into a mobile application
+          designed around your users and daily operations.
+        </p>
+
+        <ul>
+          <li>Android applications</li>
+          <li>Cross-platform applications</li>
+          <li>Business management apps</li>
+          <li>Customized mobile solutions</li>
+        </ul>
+
+        <a href="#contact">Discuss your app <span>&rarr;</span></a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-top">
+          <span>03</span>
+          <span class="service-icon">&infin;</span>
+        </div>
+
+        <h3>Maintenance &amp; Support</h3>
+
+        <p>
+          Keep your digital products reliable, secure and
+          up to date with ongoing technical assistance.
+        </p>
+
+        <ul>
+          <li>Bug fixes and troubleshooting</li>
+          <li>Updates and enhancements</li>
+          <li>Performance improvements</li>
+          <li>Ongoing technical support</li>
+        </ul>
+
+        <a href="#contact">Discuss support <span>&rarr;</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="work-section" id="work">
+
+    <div class="section-label">
+      <span class="status-dot"></span>
+      DELIVERED PROJECTS
+    </div>
+
+    <div class="work-heading">
+      <h2>
+        Ideas into<br />
+        <span>real solutions.</span>
+      </h2>
+
+      <p>
+        Every project starts with a problem worth solving.
+        We turn business requirements and ideas into practical
+        digital solutions.
+      </p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- SMART KIRANA MANAGER -->
+      <article class="work-card">
+
+        <div class="project-visual kirana-visual">
+
+          <div class="project-window">
+            <div class="mock-header">
+              <span class="mock-brand">SMART KIRANA</span>
+              <span>•••</span>
+            </div>
+
+            <div class="mock-welcome">
+              <span>BUSINESS OVERVIEW</span>
+              <strong>Your store at a glance.</strong>
+            </div>
+
+            <div class="mock-stats">
+              <div>
+                <small>Today's Sales</small>
+                <strong>₹ 12,450</strong>
+              </div>
+              <div>
+                <small>Products</small>
+                <strong>248</strong>
+              </div>
+            </div>
+
+            <div class="mock-chart">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="mock-list">
+              <span>Inventory management</span>
+              <span>Customer payments</span>
+            </div>
+          </div>
+
+          <span class="visual-caption">BUSINESS MANAGEMENT</span>
+        </div>
+
+        <div class="work-card-content">
+          <div class="project-meta">
+            <span>01 / BUSINESS APPLICATION</span>
+            <span class="project-status">DELIVERED</span>
+          </div>
+
+          <h3>Smart Kirana Manager</h3>
+
+          <p>
+            A customized business management application
+            designed for local retailers to manage inventory,
+            sales, purchases, customer credit and daily expenses.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+          </div>
+
+          <div class="client-review">
+            <div class="review-top">
+              <span class="review-label">CLIENT REVIEW</span>
+              <span class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </span>
+            </div>
+
+            <blockquote>
+              "A solution designed around our business needs."
+            </blockquote>
+
+            <p>
+              The application brings important store operations together,
+              making it easier to manage inventory, sales, purchases and
+              customer credit. The customized approach helped address
+              our day-to-day business requirements.
+            </p>
+
+            <div class="review-client">
+              <div class="client-avatar">ST</div>
+              <div>
+                <strong>Shankar Thakare</strong>
+                <small>Client · Smart Kirana Manager</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- SYSTEM SLAYER -->
+      <article class="work-card">
+
+        <div class="project-visual system-visual">
+
+          <div class="system-window">
+            <div class="system-topbar">
+              <span>SYSTEM SLAYER</span>
+              <span>LEARNING PATH</span>
+            </div>
+
+            <div class="system-heading">
+              <small>YOUR ENGINEERING JOURNEY</small>
+              <strong>Master System Design.</strong>
+              <span>Learn. Understand. Build.</span>
+            </div>
+
+            <div class="system-levels">
+              <div class="level completed">
+                <span>01</span>
+                <strong>Fundamentals</strong>
+                <small>COMPLETED</small>
+              </div>
+
+              <div class="level active">
+                <span>02</span>
+                <strong>Scalability</strong>
+                <small>IN PROGRESS</small>
+              </div>
+
+              <div class="level">
+                <span>03</span>
+                <strong>Distributed Systems</strong>
+                <small>UP NEXT</small>
+              </div>
+            </div>
+          </div>
+
+          <span class="visual-caption">SYSTEM DESIGN LEARNING</span>
+        </div>
+
+        <div class="work-card-content">
+          <div class="project-meta">
+            <span>02 / LEARNING PLATFORM</span>
+            <span class="project-status">DELIVERED</span>
+          </div>
+
+          <h3>System Slayer</h3>
+
+          <p>
+            A structured learning platform designed to help
+            software engineers understand system design,
+            architecture and real-world engineering concepts.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>System Design</span>
+            <span>AI-assisted Learning</span>
+          </div>
+
+          <div class="client-review">
+            <div class="review-top">
+              <span class="review-label">CLIENT REVIEW</span>
+              <span class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </span>
+            </div>
+
+            <blockquote>
+              "A thoughtful approach to building a learning platform."
+            </blockquote>
+
+            <p>
+              The platform offers a structured way to explore system
+              design and software architecture concepts. Its organized
+              learning approach makes complex technical topics easier
+              to navigate and understand.
+            </p>
+
+            <div class="review-client">
+              <div class="client-avatar">CD</div>
+              <div>
+                <strong>Corporate Developers Group</strong>
+                <small>Client · System Slayer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+    <div class="work-footer">
+      <span>GOOD IDEAS DESERVE GREAT EXECUTION.</span>
+      <a href="#contact">
+        Have a project in mind? Let's talk &rarr;
+      </a>
+    </div>
+
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact-section" id="contact">
+    <div class="contact-content">
+      <div class="section-label">
+        <span class="status-dot"></span>
+        HAVE AN IDEA?
+      </div>
+
+      <h2>
+        Tell us what you<br />
+        <span>want to build.</span>
+      </h2>
+
+      <p>
+        You don't need a technical document or a perfect plan.
+        Just tell us what you have in mind. We'll help you
+        explore the right solution for your business and budget.
+      </p>
+
+      <a href="mailto:hello@abhweta.com" class="primary-button">
+        Start a conversation <span>&rarr;</span>
+      </a>
+
+      <small>
+        No obligation. Just a conversation about your idea.
+      </small>
+    </div>
+
+    <div class="contact-side">
+      <img
+        class="contact-logo"
+        src="/images/logo-icon.png"
+        alt="ABHWETA Technologies logo"
+      />
+      <span>TURNING IDEAS INTO INNOVATION.</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="about">
+    <div class="footer-top">
+      <span>ABHWETA TECHNOLOGIES</span>
+      <span>TURNING IDEAS INTO INNOVATION.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        &copy; 2026 ABHWETA TECHNOLOGIES. All rights reserved.
+      </span>
+      <span>MADE WITH PURPOSE.</span>
+    </div>
+  </footer>
+</main>
